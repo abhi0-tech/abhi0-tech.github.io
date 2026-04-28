@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources/favicon.png">
+</head>
+<body>
+    <canvas id="starCanvas"></canvas>
+
+    <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <nav class="floating-navbar" id="sidebarDrawer">
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="project.html" class="active">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span class="theme-toggle-icon">◐</span>
+            <span data-theme-label>Light</span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <header style="padding-top: 150px;">
+            <h1><span class="accent">Projects</span></h1>
+            <br><br>
+            <p>A collection of work that shows what I build, how I solve problems, and the tools I use.</p>
+        </header>
+
+        <div class="main-content">
+            <section class="section" id="projects">
+                <div class="projects-grid">
+                    <a href="https://github.com/abhi0-tech/kreo-kontrol-app" target="_blank" rel="noopener noreferrer" class="project-card">
+                        <h3>Kreo Kontrol Desktop App</h3>
+                        <p>Created a wrapper for kreo-kontrol website so its easier to access and also have automatic device selection with a custom glass theme.</p>
+                        <span class="view-btn">View Project</span>
+                    </a>
+                    <a href="https://conecta-tpg1.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-card">
+                        <h3>Chat Application</h3>
+                        <p>A modern one-to-one chat application built with web technologies. Real-time messaging with a clean, intuitive interface.</p>
+                        <span class="view-btn">View Live</span>
+                    </a>
+                    <a href="https://www.fiverr.com/s/8z8QyAg" target="_blank" rel="noopener noreferrer" class="project-card">
+                        <h3>Fiverr Services</h3>
+                        <p>Professional web development services available on Fiverr. Specializing in full-stack development and custom solutions.</p>
+                        <span class="view-btn">View Profile</span>
+                    </a>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abhimanyu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

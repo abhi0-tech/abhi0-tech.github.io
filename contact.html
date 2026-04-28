@@ -3,56 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Kameno's Portfolio</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources/favicon.png">
 </head>
 <body>
+    <canvas id="starCanvas"></canvas>
 
-    <div class="main-background-image-container"></div>
-    <div id="starry-background"></div>
+    <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-    <nav class="floating-navbar">
-        <ul>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <nav class="floating-navbar" id="sidebarDrawer">
+        <ul class="navbar-links" id="navbarLinks">
             <li><a href="index.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
         </ul>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span class="theme-toggle-icon">◐</span>
+            <span data-theme-label>Light</span>
+        </button>
     </nav>
 
-    <div class="page-wrapper">
-        <header>
-            <h1>Connect With Me</h1>
+    <div class="container">
+        <header style="padding-top: 150px;">
+            <h1>Get In <span class="accent">Touch</span></h1>
+            <br><br>
+            <p>Feel free to reach out to me through any of these channels</p>
         </header>
 
-        <div class="contact-cards-container">
-            <a href="https://discordapp.com/users/784003206492717086" target="_blank" rel="noopener noreferrer" class="card contact-card-link">
-                <img src="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources/discord.png" alt="Discord" class="contact-card-icon">
-                <div class="contact-card-content">
-                    <h3>Add me on discord!</h3>
-                    <p>Lets connect there!</p>
+        <div class="main-content">
+            <section class="section" id="contact">
+                <div class="contact-links">
+                    <a href="https://discord.com/users/784003206492717086" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <img src="resources/discord.png" alt="Discord" class="contact-icon" loading="lazy">
+                        <h3>Discord</h3>
+                        <p>Chat with me directly on Discord</p>
+                    </a>
+                    <a href="https://github.com/abhi0-tech" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <img src="resources/github.svg" alt="GitHub" class="contact-icon" loading="lazy">
+                        <h3>GitHub</h3>
+                        <p>Check out my code and projects</p>
+                    </a>
+                    <a href="https://leetcode.com/u/kameno22/" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <img src="resources/leetcode.png" alt="LeetCode" class="contact-icon" loading="lazy">
+                        <h3>LeetCode</h3>
+                        <p>See my coding problem solutions</p>
+                    </a>
                 </div>
-            </a>
-
-            <a href="#" target="_blank" rel="noopener noreferrer" class="card contact-card-link"> 
-                <img src="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources/github.svg" alt="GitHub" class="contact-card-icon">
-                <div class="contact-card-content">
-                    <h3>My GitHub Profile</h3>
-                    <p>See my projects.</p>
-                </div>
-            </a>
-
-            <a href="https://leetcode.com/u/kameno22/" target="_blank" rel="noopener noreferrer" class="card contact-card-link"> 
-                <img src="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources\box.png" alt="More Platforms Icon" class="contact-card-icon"> 
-                <div class="contact-card-content">
-                    <h3>LeetCode Profile</h3>
-                    <p>Lets learn!</p>
-                </div>
-            </a>
+            </section>
         </div>
     </div>
-    <div class="signature">Kameno</div>
 
-    <script src="script.js" defer></script>
+    <footer>
+        <p>&copy; 2026 Abhimanyu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

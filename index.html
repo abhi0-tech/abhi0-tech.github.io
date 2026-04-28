@@ -3,68 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/kameno22/kameno22.github.io/refs/heads/main/resources/favicon.png">
 </head>
 <body>
+    <canvas id="starCanvas"></canvas>
 
-    <div class="main-background-image-container"></div>
-    <div id="starry-background"></div>
+    <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-    <nav class="floating-navbar">
-        <ul>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <nav class="floating-navbar" id="sidebarDrawer">
+        <ul class="navbar-links" id="navbarLinks">
             <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+            <span class="theme-toggle-icon">◐</span>
+            <span data-theme-label>Light</span>
+        </button>
     </nav>
 
-    <div class="page-wrapper">
-        <header>
-            <h1>Hey, Im <span class="title-name">Abhimanyu</span></h1>
+    <div class="container">
+        <header class="hero-header">
+            <h1>Hi, I'm <span class="accent">Abhimanyu</span></h1>
+            <p>Full Stack Developer | Tech Enthusiast | Problem Solver</p>
+            <a href="project.html" class="cta-button">View My Work</a>
         </header>
 
-        <div class="cards-container">
-            <div class="card">
-                <div class="live-indicator">LIVE</div>
-                <h3>Chat Application</h3>
-                <p>One to One chat web based chat application.</p>
-                <a href="https://conecta-tpg1.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="card">
-                <div class="live-indicator">LIVE</div>
-                <h3>My gig on Fiverr</h3>
-                <p>Hire me on fiverr</p>
-                <a href="https://www.fiverr.com/s/8z8QyAg" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="card">
-              <!-- <div class="live-indicator">LIVE</div> -->  
-                <h3>Coming Soon</h3>
-                <p>Coming Soon.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="card">
-                <!-- <div class="live-indicator">LIVE</div> -->
-                <h3>Coming Soon</h3>
-                <p>Coming Soon.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <div class="card">
-                <!-- <div class="live-indicator">LIVE</div> -->
-                <h3>Coming Soon</h3>
-                <p>Coming Soon.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-            <!-- <div class="live-indicator">LIVE</div> -->
-            <div class="card">
-                <h3>Coming Soon</h3>
-                <p>Coming Soon.</p>
-                <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
-            </div>
-        </div>
-    </div> <div class="signature">Abhimanyu</div>
 
-    <script src="script.js" defer></script>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Abhimanyu. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
